@@ -1,0 +1,67 @@
+html, body {
+  background-color: #fceee9;
+}
+
+.top {
+  width: 232px;
+  height: 312px;
+  position: absolute;
+
+cursor: pointer;
+
+
+  top: calc(50% - 156px);
+  right: calc(50% - 116px);
+  
+	-webkit-animation: pulsate-fwd 3.5s ease-in-out infinite both;
+	        animation: pulsate-fwd 3.5s ease-in-out infinite both;
+}
+
+.bottom {
+  width: 900px;
+  height: 900px;
+  position: absolute;
+
+  top: calc(50% - 450px);
+  right: calc(50% - 450px);
+
+	animation-name: spin;
+	animation-duration: 20s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@-webkit-keyframes pulsate-fwd {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes pulsate-fwd {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
